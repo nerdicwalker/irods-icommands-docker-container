@@ -23,10 +23,10 @@ EOF
 ```
 
 # deploy
-start ./deploy.sh
+start `./deploy.sh`
 
 # icommands
-start with iinit to connect to iRODS!
+start with `iinit` to connect to iRODS!
 
 
 
