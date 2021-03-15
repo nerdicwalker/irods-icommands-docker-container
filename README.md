@@ -4,7 +4,7 @@
 # usage
 
 # prerequisite
-Create an .env file and store it in the root of the repo.
+Create an .env file and store it in the root of the repo.<br>
 example .env file:
 ```
 cat << EOF > .env
