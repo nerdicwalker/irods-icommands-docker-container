@@ -34,9 +34,24 @@ cat << EOF > irods_environment.json
 EOF
 
 # building docker container
+echo "Building container.."
 docker image build -t ubuntu-1604-icommands . 
 rm -rf irods_environment.json
+
+echo "Starting container.."
 # start docker container
 docker container run --name iRODS-icommands --detach ubuntu-1604-icommands:latest tail -f /dev/null
 
-echo "Connect to container via 'docker run -it ubuntu-1604-icommands:latest bash'"
+echo "Connecting to the container.."
+# connecting docker container
+docker run -it ubuntu-1604-icommands:latest bash
+
+echo "Stoping the container.."
+# stopping docker container
+docker container stop iRODS-icommands
+
+# cleaning up 
+echo "Removing container.."
+docker container rm --force iRODS-icommands
+echo "Removing image.."
+docker image rm --force ubuntu-1604-icommands
