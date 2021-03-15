@@ -35,7 +35,7 @@ EOF
 
 # building docker container
 docker image build -t ubuntu-1604-icommands . 
-
+rm -rf irods_environment.json
 # start docker container
 docker container run --name iRODS-icommands --detach ubuntu-1604-icommands:latest tail -f /dev/null
 
