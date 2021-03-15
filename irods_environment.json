@@ -1,0 +1,13 @@
+{
+    "irods_host": "$irods_host",
+    "irods_port": "$irods_port",
+    "irods_home": "$irods_home",
+    "irods_user_name": "$irods_user_name",
+    "irods_zone_name": "$irods_zone_name",
+    "irods_authentication_scheme": "$irods_authentication_scheme",
+    "irods_encryption_algorithm": "$irods_encryption_algorithm",
+    "irods_encryption_key_size": "$irods_encryption_key_size",
+    "irods_encryption_num_hash_rounds": "$irods_encryption_num_hash_rounds",
+    "irods_encryption_salt_size": "$irods_encryption_salt_size",
+    "irods_client_server_negotiation": "$irods_client_server_negotiation"
+}
