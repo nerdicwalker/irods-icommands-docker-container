@@ -14,5 +14,5 @@ RUN apt-get -y install aptitude irods-runtime=4.2.6 irods-icommands=4.2.6
 RUN aptitude hold irods-runtime irods-icommands
 WORKDIR /root
 RUN mkdir /root/.irods
-COPY .\irods_environment.json /root/.irods/irods_environment.json
+COPY irods_environment.json /root/.irods/irods_environment.json
 RUN dos2unix /root/.irods/irods_environment.json
