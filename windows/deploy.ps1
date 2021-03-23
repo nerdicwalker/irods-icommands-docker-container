@@ -3,7 +3,7 @@ Set-ExecutionPolicy Unrestricted -force
 # Input iRODS username
 $iRODSUsername = Read-Host -Prompt 'Please provide your iRODS username? '
 
-"
+@"
 {
     "irods_host": "uva-yoda.irods.surfsara.nl",
     "irods_port": 1247,
@@ -17,7 +17,7 @@ $iRODSUsername = Read-Host -Prompt 'Please provide your iRODS username? '
     "irods_encryption_salt_size": 8,
     "irods_client_server_negotiation": "request_server_negotiation"
 }
-" | out-file irods_environment.json
+"@ | out-file irods_environment.json
 
 # building docker container
 Write-Host "Building container.."
