@@ -1,7 +1,7 @@
 Set-ExecutionPolicy Unrestricted -force
 
 # Input iRODS username
-$iRODSUsername = Read-Host -Prompt 'Please provide your iRODS username? '
+$iRODSUsername = Read-Host -Prompt 'Please provide your iRODS username: '
 
 @"
 {
